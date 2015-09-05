@@ -1,0 +1,3 @@
+<div class="headline">Set Quick Reminders Quickly</div>
+
+<a href="<%= new_reminder_path %>" class="button">Create a reminder</a>
