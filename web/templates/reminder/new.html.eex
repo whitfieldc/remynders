@@ -1,0 +1,20 @@
+<form>
+  <div class="input_wrapper center_block">
+    <label>Reminder text</label>
+    <input type="textarea"></input>
+  </div>
+
+  <div class="input_wrapper center_block">
+    <label>Minutes from now</label>
+    <input type="number" value="10"></input>
+  </div>
+
+  <div class="input_wrapper center_block">
+    <label>Your email</label>
+    <input type="email"></input>
+  </div>
+
+  <div class="input_wrapper center_block">
+    <input type="submit" value="Remynd me" class="button"></div>
+  </div>
+</form>
