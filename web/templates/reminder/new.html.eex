@@ -1,20 +1,20 @@
-<form>
+<%= form_for @changeset, reminder_path(@conn, :create), fn f -> %>
   <div class="input_wrapper center_block">
     <label>Reminder text</label>
-    <input type="textarea"></input>
+    <%= text_input f, :title %>
   </div>
 
   <div class="input_wrapper center_block">
     <label>Minutes from now</label>
-    <input type="number" value="10"></input>
+    <%= number_input f, :minutes, [{:value, "10"}] %>
   </div>
 
   <div class="input_wrapper center_block">
     <label>Your email</label>
-    <input type="email"></input>
+    <%= text_input f, :email %>
   </div>
 
   <div class="input_wrapper center_block">
-    <input type="submit" value="Remynd me" class="button"></div>
+    <%= submit "Remynd me" %>
   </div>
-</form>
+<% end %>
